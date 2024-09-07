@@ -150,7 +150,7 @@ require("neotest").setup({
 -- general
 lvim.log.level = "warn"
 lvim.format_on_save = true
-lvim.colorscheme = "kanagawa-lotus"
+lvim.colorscheme = "kanagawa-wave"
 vim.opt.termguicolors = true
 -- lvim.lsp.diagnostics.virtual_text = false
 -- to disable icons and use a minimalist setup, uncomment the following
@@ -231,6 +231,9 @@ formatters.setup {
     command = "clang-format",
     filetypes = { "java" },
     extra_args = { "--style", "Google" },
+  },
+  {
+    name = "rustfmt"
   }
 }
 
